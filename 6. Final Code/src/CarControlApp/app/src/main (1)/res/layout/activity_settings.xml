@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".Settings">
+
+    <Button
+        android:id="@+id/goToMenu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/info"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/swipe"
+        android:gravity="top|center"
+        android:paddingTop="2dp"
+        android:rotation="-90"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="80dp"
+        android:text="Definições"
+        android:textAlignment="textStart"
+        android:textColor="@color/myblue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/notifications"
+        android:layout_width="108dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="140dp"
+        android:text="Notificações"
+        android:textColor="@color/myblue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/sound"
+        android:layout_width="108dp"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/notifications"
+        android:layout_marginTop="178dp"
+        android:text="Sons"
+        android:textColor="@color/myblue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/addUser"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/title"
+        android:layout_marginTop="240dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="Adicionar Utilizador"
+        android:textColor="@color/myblue"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/newUser"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/title"
+        android:layout_marginTop="279dp"
+        android:ems="10"
+        android:hint="Nome de Utilizador ou Email"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#0091ff"
+        android:textColorHint="#6c899f"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/addNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="267dp"
+        android:layout_marginEnd="27dp"
+        android:background="@drawable/button_unselected"
+        android:text="Adicionar"
+        android:textColor="@android:color/background_light"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/changePass"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignStart="@+id/title"
+        android:layout_below="@+id/addNewUser"
+        android:layout_marginTop="-264dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="Alterar Password"
+        android:textColor="@color/myblue"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/oldPass"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/title"
+        android:layout_below="@+id/changePass"
+        android:ems="10"
+        android:hint="Password Atual"
+        android:inputType="textPassword"
+        android:text=""
+        android:textColor="#0091ff"
+        android:textColorHint="#6c899f"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/newPass"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/title"
+        android:layout_below="@+id/oldPass"
+        android:ems="10"
+        android:hint="Nova Password"
+        android:inputType="textPassword"
+        android:text=""
+        android:textColor="#0091ff"
+        android:textColorHint="#6c899f"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/confirmChangePass"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/addNewUser"
+        android:layout_marginBottom="123dp"
+        android:background="@drawable/button_unselected"
+        android:text="Adicionar"
+        android:textColor="@android:color/background_light"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/title"
+        android:layout_marginBottom="82dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="Terminar Sessão"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/title"
+        android:layout_alignTop="@+id/sound"
+        android:buttonTint="@android:color/background_light"
+        android:textColor="@android:color/background_light" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/title"
+        android:layout_alignTop="@+id/notifications"
+        android:buttonTint="@android:color/background_light"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/title"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/button_unselected"
+        android:text="Terminar"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/end"
+        android:layout_marginStart="143dp"
+        android:background="@drawable/button_unselected"
+        android:text="Cancelar"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>

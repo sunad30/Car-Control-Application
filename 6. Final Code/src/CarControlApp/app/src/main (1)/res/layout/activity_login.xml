@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context="Login">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="256dp"
+        android:layout_height="58dp"
+        android:layout_above="@+id/login_password"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Nome de Utilizador ou Email"
+        android:inputType="textPersonName"
+        android:textColor="#0091ff"
+        android:textColorHint="#6c899f" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="256dp"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="225dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#0091ff"
+        android:textColorHint="#6c899f" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/button_unselected"
+        android:text="Entrar"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/login_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="84dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>
