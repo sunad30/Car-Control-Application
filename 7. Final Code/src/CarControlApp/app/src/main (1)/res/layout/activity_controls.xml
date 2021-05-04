@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    tools:context=".Controls"
+    android:background="@android:color/background_dark">
+
+
+    <Button
+        android:id="@+id/trunk"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/lock"
+        android:layout_marginTop="222dp"
+        android:background="@android:color/background_dark"
+        android:drawableTop="@drawable/trunk"
+        android:text="Mala"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/headlight"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/lock"
+        android:layout_marginEnd="70dp"
+        android:background="@android:color/background_dark"
+        android:drawableTop="@drawable/headlight"
+        android:text="Faróis"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/honk"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/headlight"
+        android:layout_alignTop="@+id/trunk"
+        android:background="@android:color/background_dark"
+        android:drawableTop="@drawable/honk"
+        android:text="Buzinar"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/lock"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="94dp"
+        android:background="@android:color/background_dark"
+        android:drawableTop="@drawable/lock"
+        android:text="Trancar"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/goToMenu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/info"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/swipe"
+        android:gravity="top|center"
+        android:rotation="-90"
+        android:textColor="@android:color/background_light" />
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark"
+        app:srcCompat="@drawable/info50x50" />
+
+    <ExpandableListView
+        android:id="@+id/expList"
+        android:layout_width="match_parent"
+        android:layout_height="289dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:contextClickable="true" />
+
+    <TextView
+        android:id="@+id/id2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Controlos"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+</RelativeLayout>

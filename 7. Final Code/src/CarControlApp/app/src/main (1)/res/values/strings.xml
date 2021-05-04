@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CarControlApp</string>
+    <string name="contentString">content</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="StatusList">Energia: 100%\nDistância Capaz: 500km\nConsumo:2%/km\
+        Óleo: OK\n Emissão C02: 10mg/km\n Pressão Pneus: OK\nTravões: OK</string>
+    <string name="AjudaMenu">\n<b>AC:</b> Controlo do Ar Condicionado. Permite (des)ativá-lo e definir a temperatura desejada.\n\n
+                             <b>Controlos:</b> Painel de gestão das funcionalidades oferecidas pela viatura. Permite (des)trancar remotamente tanto as portas, como a mala e o capô. Permite tambem ligar os faróis e buzinar se necessário.\n\n
+                             <b>Estado:</b> Painel informativo de todos os detalhes do estado atual do veículo. Inclui nível de bateria, estado dos travões, níveis do óleo, ...\n\n
+                             <b>Localizar:</b> Auxiliar de localização do veículo. Funcionalidade que não só indica graficamente o paradeiro do veículo, como também fornece a opção de manualmente tomar uma nota da sua localização(ex: Fila A2).</string>
+    <string name="AjudaMain">\n<b>Representação visual da sua viatura</b>\n\nElementos a vermelho indicam um possível problema grave, como por exemplo uma porta destrancada. Elementos a amarelo indicam alertas, como por exemplo um farol com mau-funcionamento, ou o ar condicionado ativo.\n\n
+                                Todas estas informações encontram-se disponíveis nesta página e são apresentadas quando o utilizador clica no símbolo de cada alerta.</string>
+    <string name="AjudaAC">\n<b>Controlo do Ar Condicionado</b>\n\nÉ neste painel que se encontra a funcionalidade de manipulação do ar condiconado. É permitido que o utilizador (des)ligue o serviço, assim como ajustá-lo às suas necessidades, podendo aumentar ou diminuir a tempuratura. São fornecidos dois pares de botões, os interiores que alteram \n\n
+                                A cada acção tomada pelo utilizador pode-se observar o respetivo feedback na janela. O estado do ar condicionado é guardado entre janelas.</string>
+    <string name="AjudaControls"><b>Painel de gestão das funcionalidades do veículo</b>\n\n<b>Mala:</b> Permite (des)trancar a mala do carro.\n
+                                    <b>Buzinar:</b> Permite ativar a buzina do carro.\n
+                                    <b>Trancar:</b> Permite trancar todas as portas do carro, caso nenhuma esteja aberta não acontece nada apesar da acção ser aceite.\n
+                                    <b>Faróis:</b> Permite (des)ligar os faróis do carro.\n\n
+                                    <b>Controlos Avançados:</b> Permite controlar de uma forma mais precisa o carro, como por exemplo destrancar apenas uma porta.\n\n
+                                    Todas estas ações são devidamente sinalizadas com mensagens de aceitação.</string>
+    <string name="AjudaLocalize">\n<b>Auxiliar de localização da viatura</b> Nesta página é fornecido um orientador visual que aponta para o local onde o veículo se encontra. É também indicado a distância em metros entre o utilizador e o carro.\n\n
+                                    Fornece-se também a opção do utilizador anotar manualmente onde o carro se encontra, quer seja a fila do parque do centro comercial, ou um marco que o utilizador considere significante e que defina onde a viatura se encontra.</string>
+    <string name="AjudStatus">\n<b>Painel informativo do estado atual do veículo</b>\n\n
+                                Toda a informação apresentada é diretamente lida do seu veículo. Nesta lista consta o nível de bateria atual do seu veículo, a quantidade de quilómetros que pode conduzir com essa bateria, o nível de óleo, a pressão dos pneus, assim como todas as outras informações relevantes de um veículo.</string>
+    <string name="title_activity_main2">Main2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>
